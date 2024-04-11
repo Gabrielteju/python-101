@@ -45,7 +45,7 @@ print(u)    #python allows you to assign multiple variables to a single value as
 
 
 #UNPACKING, say
-fruits=['apple', 'banana', 'cherry']  #this is a list, as enclosed with a burly braces
+fruits=['apple', 'banana', 'cherry']  #this is a list, as enclosed with a burly braces, just like array in javascript
 x,y,z=fruits
 print(y)
 
@@ -88,6 +88,7 @@ print(type(x)) # returns class int
 x='The advent of AI'
 print(type(x)) #returns class string
 
+
 #FLOAT
 y=5.009
 print(type(y)) #returns class float
@@ -116,7 +117,7 @@ mySet={"apple", 'radio', 'mac', 'samsung'}   #this is a set
 print(type(mySet))
 
 
-#DICTIONARY(dict) almost similar to objects in Javascript, it also consits of a key and value pair that we work with
+#DICTIONARY(dict) almost similar to objects in Javascript, it also consits of a key and value pair,
 myDict={"name":"john", "age":'45', 'height':'34meteres'}
 print(type(myDict))
 
@@ -158,3 +159,61 @@ print(z)
 
 #RANDOM NUMBERS
 #unlike JS, python does not have a random() function, but we can import a random module and make use of it in addition with a function
+import random  #after importing this, we can now use it with another function as in random. something
+randy=random.random()
+print(randy)  # gives a random number(float particulaly) on run
+
+num= random.randint(2,10)   # this will return a random integer between 2 and 10 inclusive
+print(num)
+
+#MULTILINE STRINGs IN PYTHON, not we can make use of the double of the double or the triple quotes
+a= '''we are preparing
+     for the final
+    match between
+    the two team'''
+print(a)    #the multiline string will make the output to be the same way and format that it is in a, with the line breaks etc
+
+
+
+#just like we have indexes in javascript, same goes for python, now let's see the example below
+fruit='banana'
+#print(fruit[2])   #this will show what is on index 2 of fruit which is n, do not forget that indexes starts from 0 to anything, so we have 0,1,2,3 etc
+
+
+#IN PYTHON STRINGS ARE ARRAYS, SO WE CAN LOOP THROUGH A STRING SAME WAY WE CAN LOOP THROUGH AN ARRAY, example
+for x in 'banana':
+    print(x)    #this is going to loop through banana and ouput the letters in it
+
+
+# TO GET THE LENGTH OF A STRING, WE USE THE len() FUNCTION, the len() function returns the length of a string
+w='oludairo adeteju'
+print(len(w))   #16 including the space
+
+t='my name is oludairo adeteju'
+print(len(t))
+
+#TO CHECK IF SOMETHING IS CONTAINED IN ANOTHER THING or NOT FOR EXAMPLE(in and not in)
+
+x='only God can bring an end to the conflict between RUssia and Ukraine'
+print('Ukraine' in x)  #returns true
+print('Ghana' in x) #returns false
+print('Nigeria' not in x)   #returns true
+
+
+#we can apply the checking string in if and else statements
+quote='you cannot eat your cake and have it'
+if 'you' in quote:
+    print('yes, it is contained in there')
+else:
+    print('it is not contained inside')
+
+countries='russia,lesotho,paraguay,venezuela,bennin,portugal,scotland'
+print('scotland' in countries)
+print('panama' not in countries)
+#we can use the not in and in for an if and else statement
+
+
+#SLICING STRING
+
+
+
