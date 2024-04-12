@@ -213,7 +213,70 @@ print('panama' not in countries)
 #we can use the not in and in for an if and else statement
 
 
-#SLICING STRING
+#SLICING STRING IN PYTHON- we specify the start index and the end index, separated by a colon, to return a part of the string
+stingy='domicican'
+print(stingy[2:3])    #this gives just 'm', 2 is the start index while 3 the 3 index will not be added
+
+
+#if we leave out the start index
+hello='hello world'
+print(hello[:5])    # you will get hello as the result, the empty start index means start from the very beginning
+
+
+hello_two='hello world'
+print(hello_two[2:]) #you will get llo world meaning from that place(index 2) to the very end
+
+
+#NEGATIVE INDEXING- We use negative indexing to start the slice from the end of the screen
+my_list=[10,20,30,40,50]
+print(my_list[-1])  #this prints out the last item in the list
+print(my_list[-4:-2])  #this will start the counting fromt ehback but will not include the very last index(-2) just as it is when dealing with positive integers
+print(my_list[-2:])   #this will give 40 and 50
+print(my_list[-5:]) #this will give the value from the index of -5 to the last one 
+
+
+#MODIFYING STRING IN PYTHON
+#the upper method return the string in uppeercase
+stringy='NBA Youngboy'
+print(stringy.upper())  #this is a method like it is in JS
+print(stringy.lower())   #this is a method like it is in JS
+print(stringy.capitalize())   #this is a method like it is in JS
+#we can remove the white space from the end and the beginning of what we were given using the .strip() method
+
+stripping=' there are many meanings to the world radio     '   #the space in front and back will be removed
+print(stripping.strip())
+
+
+
+#we have the replace method
+caseone='televison'
+print(caseone.replace('t','v'))  #this replaces the t to v so we have velevision
+
+food='coming'
+print(food.replace('c', 'f'))
+
+#STRING CONCATENATION
+a='hello'
+b='world'
+c=a+ ' ' + b
+print(c)
+
+
+
+#STRING FORMAT
+age=36
+txt='my name is John, I am' + age
+#print(age)  # you will get error, you cannot add a string and an integer
+
+
+
+
+
+
+
+
+
+
 
 
 
