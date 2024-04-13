@@ -265,8 +265,99 @@ print(c)
 
 #STRING FORMAT
 age=36
-txt='my name is John, I am' + age
+#txt='my name is John, I am' + age
 #print(age)  # you will get error, you cannot add a string and an integer
+
+
+name='alice'
+age=23
+print("hello, {}. You are {} years old.". format(name, age)) #. format here means fill up the empty curly braces with name and age respectively 
+
+firstName='Oludairo'
+lastName='Adeteju'
+MiddleName="Gabriel"
+myStatement='{} is my firstname, {} is my lastname and {} is my middlename'
+print(myStatement.format(firstName, lastName, MiddleName))   #study the structuring of this
+
+#in string formating, we can make use of index number to be sure that the argument is placed at the correct spot
+name='damola'
+age=23
+profession='tailor'
+details='my name is {0}, and i am {1} years old, In addition to this details, i also work as a {2} in a reputable organization'
+print(details.format(name, age, profession))
+
+fish='tilapia'
+radio='positive fm'
+yam='yellow yam'
+final='the name of the fish is {}, and the name of the radio station that we heard it is {} afterwards we went to the kitchen to cook {}'
+print(final.format(fish,radio,yam))
+
+
+#ESCAPE CHARACTERS IN PYTHON-they are used to insert illegal characters in a string, we make us of the backslash '\'  for the escape character, 
+#for a new line
+print("hello\nWorld")
+
+#flashback
+def myFUnction(a,b):
+    return (a*b)
+result=myFUnction(3,5)
+#print(result)    
+
+
+#we use the escape key for tab as in
+print('hello\tworld')
+
+#to add two backslashes
+print('we are\\\preparing')
+
+#to add a single quote
+print('teju\'s phone is an android phone')  #this will make the apostrophe possible without generating an error
+
+text='we are coming from the jungle and we seriously need to eat some food before continuing in our journey'
+#print(text.upper())
+#print(text.lower())
+#print(text.upper())
+
+
+
+
+#PYTHON BOOLEAN
+#print(type('rf')==type('fish')) #true
+#print(34==34)  #true
+
+a=10
+b=3
+if(a<b):
+    print("i am less")
+else:
+    print('I am not less')          
+
+
+#Evaluation to be true or not, most evaluation is true except for 0 in number and empty string on strings, this is just liek the TRUTHY AND FALSY IN JS
+#print(bool('hello world')) #returns true
+#print(bool(34))   #returns true
+    
+#examples of falsy values are False, None, 0, " ", (). [],{}
+    #print(bool(0))
+    #print(bool(False))
+    #print(bool(()))
+    #print(bool([]))   #they are all false
+
+#PYTHON OPERATORS
+#we have some pythi assignment operators e,g, x=+3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
+
+#PYTHON COMPARISM OPERATORS==, !=, >,>=, <=, means equal to, not equal to, greater than or equal to, less than or equal to etc
+#PYTHON LOGICAL OPERATOR include and, or,not etc
+#PYTHON IDENTITY OPERATOR INCLUDE:is, is not etc
+#PYTHON MEMBERSHIP OPERATOR, in and not in
+
+
+#PYTHON LIST-lists are used to store multiple items in a variable
+
+
+
+
+
 
 
 
