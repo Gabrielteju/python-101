@@ -286,6 +286,8 @@ profession='tailor'
 details='my name is {0}, and i am {1} years old, In addition to this details, i also work as a {2} in a reputable organization'
 print(details.format(name, age, profession))
 
+
+
 fish='tilapia'
 radio='positive fm'
 yam='yellow yam'
@@ -344,7 +346,7 @@ else:
     #print(bool([]))   #they are all false
 
 #PYTHON OPERATORS
-#we have some pythi assignment operators e,g, x=+3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
+#we have some python assignment operators e,g, x=+3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
 
 #PYTHON COMPARISM OPERATORS==, !=, >,>=, <=, means equal to, not equal to, greater than or equal to, less than or equal to etc
 #PYTHON LOGICAL OPERATOR include and, or,not etc
@@ -353,6 +355,17 @@ else:
 
 
 #PYTHON LIST-lists are used to store multiple items in a variable
+#to determine the number of items of a list we use the len() function
+thislist=['apple', 'pawpaw','cashew','guava']
+
+print(len(thislist))  #it is read as 1 to 4 not in the index manner, list items can be of any data type, i.e the items in the list can be a combination of boolean, string, int etc
+#There a 4 collection data type in python, they are, LIST,TUPLE,SET,DICTIONARY
+listy=['apple', 4, False, 'radio','banana']   #we can also check for membership of items in a list
+if 'apple' in listy:
+    print('yes, apple is in the list')
+else:
+    print('apple cannot be founf in the provided list')
+
 
 
 
