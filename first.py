@@ -366,6 +366,91 @@ if 'apple' in listy:
 else:
     print('apple cannot be founf in the provided list')
 
+#we can change the item in a list, this is for REPLACING, not INSERTION
+thislist=['apple', 'banana', 'cherry', 'orange']
+thislist[1]='pawpaw'
+print(thislist)
+
+#to change a range of item values, say that we have
+thislist=['apple', 'banana', 'cherry', 'orange', 'kiwi','bread','opeyemi']
+thislist[1:3]=['fish','rice','beans']
+#print(thislist) #if you insert more items than you replace, the new items will be inserted where you specified and the remaining items will move accordingly
+
+
+#insertion of new items in list-without replacing any other item in the list
+this_list3=['apple', 'banana', 'cherry', 'orange', 'kiwi','bread','opeyemi', 'man']
+this_list3.insert(3,'frying')
+#print(this_list3)
+
+
+#we can also append to a list--appending something to a list means you want to add something at the very ending of the list, say that we have-- NOTE THAT APPEND IS A METHOD as in(.append)
+
+my_list=['usa', 'Nigeria','portugal','lebanon','israel','veitnam','peru']
+my_list.append('chile')
+#print(my_list)  #chile will be  added to the last item on the list
+
+#like we said above, we have the insert method, we just specify the index we want the new item to be inserted in and puut the item
+our_list=['rain','sun','weather','winter']
+our_list.insert(2,'haze')
+print(our_list)
+
+
+#we can also append a list to another list, by saying for example:
+list1=['teju','dolapo','johnson','rita']
+list2=['ibikunle','ogolo','ogunjo','adesiji']
+list1.extend(list2)
+print(list1)
+
+#the extend methid does not necessarily have to be a list, we can add a list to a tuple, to a dictionary, etc
+listA=['nba','kodak','ross']
+listB=('eminem','drdre','icecube')
+listA.extend(listB)
+print(listA)  #the final result will be a list tho
+
+
+listA=('nba','kodak','ross')
+listB=['eminem','drdre','icecube']
+#listA.extend(listB)
+#print(listA)   #this will create error, you can only add something to a list, not something to a tuple etc
+
+
+#we can also remove from a lsit item, for example
+listB=['eminem','drdre','icecube','lil mabu','durk']
+listB.remove('durk')
+print(listB)
+listB.remove('eminem')
+listB.remove('lil mabu')
+print(listB)
+
+#in Python we have the pop method, the pop method remove the last item from the list, but if we specify the index number, then the item on that index will be removed for example
+listB=['eminem','drdre','icecube','lil mabu','durk']
+listB.pop(1)
+#print(listB)   #3drdre would have been removed from this list
+
+#we can delete an entire list by using the 'del' keyword, note that using a keyword is different from using a method
+listB=['eminem','drdre','icecube','lil mabu','durk']
+del(listB)
+#print(listB), it will tell you that listB is not defined
+
+
+#there is the .clear() method, it clears the items in the list e.g
+listC=['eminem','drdre','icecube','lil mabu','durk']
+listC.clear()
+#print(listC)  #you will get back an empty list
+
+#LOOPING
+#FOR
+#we can loop through a list by using a for loop, say that we have:
+
+forlooping={'eminem','drdre','icecube','lil mabu','durk'}   #whether this is list, dictionary, tuple--they are all iterable
+for x in forlooping:
+    print(x)  #this will bring out the items in the list, just like the map method in js
+
+
+#WHILE loop
+    #you can loop through a list item by using the while loop, 
+
+
 
 
 
