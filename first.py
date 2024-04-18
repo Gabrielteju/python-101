@@ -17,6 +17,7 @@ if 5>3:
     x=4 + 2   #output should be an integer
     x='string' #it has now been reassigned to be a string
     print(x)
+
 #CASTING(If you want to specify a data type of a variable)
     t=str(3)
     w=int(4)
@@ -45,9 +46,10 @@ print(u)    #python allows you to assign multiple variables to a single value as
 
 
 #UNPACKING, say
-fruits=['apple', 'banana', 'cherry']  #this is a list, as enclosed with a burly braces, just like array in javascript
+fruits=['apple', 'banana', 'cherry']  #this is a list, as enclosed with  curly braces, just like array in javascript
 x,y,z=fruits
-print(y)
+print(y)   #banana is the output
+
 
 #Python allows you to combine text and a variable
 the_string='radio'
@@ -57,7 +59,7 @@ print(the_string + " " + the_num)
 x=5
 y='5'
 z=x+int(y)
-print(z) #you will get 10, but you ccanno add sting and number, you will get error
+print(z) #you will get 10, but you cannot add sting and number, you will get error
 
 
 #PYTHON GLOBAL VARIABLES
@@ -72,7 +74,7 @@ myfunction()
 
 
 #we can also have it as
-def addtwoThings():
+def addtwoThings(): 
     print(x + ' ' + 'God') #the x that we assiged to a value above can be used in another place and hence x is a global variable
 addtwoThings()
 
@@ -99,7 +101,7 @@ print(type(t))  #this returns class complex
 
 
 #LIST
-w=['john', 'michael', 'vince', 'bruce', 'paul']  #this is a list, curly braces
+w=['john', 'michael', 'vince', 'bruce', 'paul']   #this is a list, curly braces
 k=type(w)
 print(k)  
 
@@ -107,13 +109,15 @@ print(k)
 #TUPLE
 w=('john', 'michael', 'vince', 'bruce', 'paul')  #this is a tuple, brackets
 
+
+
 #RANGE
 x=range(20)
 print(x)
 
 
 #SET
-mySet={"apple", 'radio', 'mac', 'samsung'}   #this is a set
+mySet= {"apple", 'radio', 'mac', 'samsung'}   #this is a set(just like in math where something is enclosed inside of curly braces)
 print(type(mySet))
 
 
@@ -163,10 +167,10 @@ import random  #after importing this, we can now use it with another function as
 randy=random.random()
 print(randy)  # gives a random number(float particulaly) on run
 
-num= random.randint(2,10)   # this will return a random integer between 2 and 10 inclusive
+num= random.randint(2,10)   #this will return a random integer between 2 and 10 inclusive
 print(num)
 
-#MULTILINE STRINGs IN PYTHON, not we can make use of the double of the double or the triple quotes
+#MULTILINE STRINGs IN PYTHON, not we can make use of double or the triple quotes
 a= '''we are preparing
      for the final
     match between
@@ -185,15 +189,16 @@ for x in 'banana':
     print(x)    #this is going to loop through banana and ouput the letters in it
 
 
-# TO GET THE LENGTH OF A STRING, WE USE THE len() FUNCTION, the len() function returns the length of a string
+
+#TO GET THE LENGTH OF A STRING, WE USE THE len() FUNCTION, the len() function returns the length of a string
 w='oludairo adeteju'
 print(len(w))   #16 including the space
+
 
 t='my name is oludairo adeteju'
 print(len(t))
 
 #TO CHECK IF SOMETHING IS CONTAINED IN ANOTHER THING or NOT FOR EXAMPLE(in and not in)
-
 x='only God can bring an end to the conflict between RUssia and Ukraine'
 print('Ukraine' in x)  #returns true
 print('Ghana' in x) #returns false
@@ -230,7 +235,7 @@ print(hello_two[2:]) #you will get llo world meaning from that place(index 2) to
 #NEGATIVE INDEXING- We use negative indexing to start the slice from the end of the screen
 my_list=[10,20,30,40,50]
 print(my_list[-1])  #this prints out the last item in the list
-print(my_list[-4:-2])  #this will start the counting fromt ehback but will not include the very last index(-2) just as it is when dealing with positive integers
+print(my_list[-4:-2])  #this will start the counting from the back but will not include the very last index(-2) just as it is when dealing with positive integers
 print(my_list[-2:])   #this will give 40 and 50
 print(my_list[-5:]) #this will give the value from the index of -5 to the last one 
 
@@ -335,7 +340,7 @@ else:
     print('I am not less')          
 
 
-#Evaluation to be true or not, most evaluation is true except for 0 in number and empty string on strings, this is just liek the TRUTHY AND FALSY IN JS
+#Evaluation to be true or not, most evaluation is true except for 0 in number and empty string on strings, this is just like the TRUTHY AND THE FALSY IN JS
 #print(bool('hello world')) #returns true
 #print(bool(34))   #returns true
     
@@ -346,7 +351,7 @@ else:
     #print(bool([]))   #they are all false
 
 #PYTHON OPERATORS
-#we have some python assignment operators e,g, x=+3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
+#we have some python assignment operators e,g, x+=3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
 
 #PYTHON COMPARISM OPERATORS==, !=, >,>=, <=, means equal to, not equal to, greater than or equal to, less than or equal to etc
 #PYTHON LOGICAL OPERATOR include and, or,not etc
