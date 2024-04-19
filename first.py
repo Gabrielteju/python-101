@@ -364,12 +364,13 @@ else:
 thislist=['apple', 'pawpaw','cashew','guava']
 
 print(len(thislist))  #it is read as 1 to 4 not in the index manner, list items can be of any data type, i.e the items in the list can be a combination of boolean, string, int etc
-#There a 4 collection data type in python, they are, LIST,TUPLE,SET,DICTIONARY
+
+#There is a 4 collection data type in python, they are, LIST,TUPLE,SET,DICTIONARY
 listy=['apple', 4, False, 'radio','banana']   #we can also check for membership of items in a list
 if 'apple' in listy:
     print('yes, apple is in the list')
 else:
-    print('apple cannot be founf in the provided list')
+    print('apple cannot be found in the provided list')
 
 #we can change the item in a list, this is for REPLACING, not INSERTION
 thislist=['apple', 'banana', 'cherry', 'orange']
@@ -451,13 +452,61 @@ forlooping={'eminem','drdre','icecube','lil mabu','durk'}   #whether this is lis
 for x in forlooping:
     print(x)  #this will bring out the items in the list, just like the map method in js
 
+teju=range(5) #normally will give us (0,5)
+for i in teju: #looping through this will now give us 0,1,2,3,4............ and will be printed  
+    print(i)   
+
+    
+thislis=['apple', 'banana', 'cherry']
+for x in range(len(thislis)):    #since len gives the length which is 3, range(3) will give us 0,1,2, for will now loop through it to output what is needed
+    print(x)
+    
 
 #WHILE loop
-    #you can loop through a list item by using the while loop, 
+    #you can loop through a list item by using the while loop, i.e we make use of the while loop to repeatedly execute a block of code as long as  gien condition is true
+
+count=1
+while count<=5:   #the loop continues as long as count is less than or equal to 5
+    count+=1
+    print(count)
 
 
+#Let us say that we have a list
+listy=['teju','damola','paul','kunle']
+#[print (i) for i in listy]   #this is a shorthand form of writing a for loop
 
 
+#LIST COMPREHENSION, you can create an empty list and add from the previous list to that empty list:
+#say:
+
+list_of_fruits=['apple','coco','isu','orange','banana','pawpaw','hui','caca']
+newlist=[]
+for x in list_of_fruits:
+    if 'a' in x:
+        newlist.append(x)
+#print(newlist)
+
+#summary of what i have above is that, we have an existing list, then we have an empty list, we looped through the existing list(x) and then we say if string a 'a' is in anayway included in what we looped through, then append the ones that contain 'a' to the empty list that we created and hence print the newlist tat we are having:
+
+#ITERABLE:
+#the iterable can be any iterable object like, list, tuple, set etc
+my_list=[x for x in range(0,10)]     #the full meaning is print x for x in range(0,10)
+print(my_list)
+
+#another way of wrtiting the above
+rangy=range(10)
+for i in rangy:
+    print(i)
+
+newlist_2=[x for x in range(13) if x<5]   #print for only those less than 5
+print(newlist_2)
+
+
+#another example
+fruit=['apple','banana','cherry','kiwi','mango']
+newlist=[x.upper() for x in fruit]   #note the order
+print(newlist) 
+#we had an existing list, then we want to  have a newlist that will loop through the existing list and then make the out uppercase form, take note of THE ABOVE VERY WELL
 
 
 
