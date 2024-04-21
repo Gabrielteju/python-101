@@ -587,6 +587,17 @@ print(listOne)    #instead of returning a list inside of a a list, listTwo is lo
 
 
 #PYTHON TUPLES
+#a tuple is one of the four in built data type in python used to store collections of data, the other three are list, set and dictionary
+#note that TUPLES in python are immutable-i.e they cannot be changed, we cannot use all these reverse, join method on it
+#to create a tuple with one item, we need to add a comma after the first item in the tuple e.g
+tupley=('food',)   #this is a tuple if we check the type, <class tuple>
+tupley=('food')  #this is a string
+
+#the items in a tuple can be of any type, can be boolean, string, etc
+#A LIST IS A COLLECTION THAT IS ORDERED AND CHANGEABLE
+#A TUPLE IS A COLLECTION THAT IS ORDERED AND UNCHANGEABLE
+#A DICTIONARY IS A COLLECTION THAT IS ORDERED AND CHANGEABLE
+
 
 
 
