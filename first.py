@@ -502,11 +502,115 @@ newlist_2=[x for x in range(13) if x<5]   #print for only those less than 5
 print(newlist_2)
 
 
+
 #another example
 fruit=['apple','banana','cherry','kiwi','mango']
 newlist=[x.upper() for x in fruit]   #note the order
 print(newlist) 
 #we had an existing list, then we want to  have a newlist that will loop through the existing list and then make the out uppercase form, take note of THE ABOVE VERY WELL
+
+
+
+previous_list=['television','radio','mobile phone','guitar']
+new_list3=[x for x in previous_list]  #print x in the uppercase, after looping through the items in the list
+new_list=[x.upper() for x in previous_list] 
+print(new_list)
+
+
+new_list3=[x for x in previous_list]  #print x, after looping through the items in the list
+print(new_list3)
+
+
+newlist_4=[x for x in previous_list if 'a' in x]   # note it means print x after looping through previous_list if a is among the letters in the lists, we can also state a condition like [x for x in previous_list if type(x)!='string'] you are free o explore multiple ways of writing it
+
+
+#PYTHON SORT-python has a sort method that will sort the items in the list alphanumerically for example
+this_list=['orange','apple','kiwi','pineapple','banana']
+this_list.sort()
+print(this_list)    #output will be arranged in aphabetical order
+
+
+numerical_list=[23,90,12,32,81]   
+numerical_list.sort()
+print(numerical_list) #it will be arranged in ascending order
+
+
+numerical_list2=[23,90,12,32,81] 
+numerical_list2.reverse() 
+#numerical_list2.sort(reverse=True)   #this is going to make sure that the numbers are arranged in descending order, we can use the reverse above or setting reverse to be True while using the sort method
+print(numerical_list2)
+
+
+def myFunction(x):
+    return abs(x-50)
+print(myFunction(20))    #it returns 30
+
+#the sort method is case sensitive, meaning that it sorts items in the list that starts with CAPITAL letter before the ones with lower case letters for example;
+mixture1=['banana','pumpkin', 'Orange','Egusi']
+mixture1.sort()
+print(mixture1)   #Egusi comes first in the list then Orange before, banana etc
+
+
+#to perform a case insensitive sort, we use the key,  and say
+mixture1=['banana','pumpkin', 'Orange','Egusi']
+mixture1.sort(key=str.lower)   #note that .lower does not have ()  attached to it
+print(mixture1)
+
+#COPYING A LIST IN PYTHON---by making use of the copy method, say that we have the list
+list_one=['ade','bola','opeyemi','bisola','titi']
+list_two=list_one.copy()
+print(list_two)    #what is inside of list one will bw copied into list two or instead of using the copy method, we can just say
+
+list_three=['ade','bola','opeyemi','bisola','titi']
+list_four=list(list_three)
+print(list_four)  # what we have in list three will be copied into list four and will be printed
+
+
+#PYTHON JOIN
+#joining something in python also means concatenating
+listOne=['a','b','c']
+listTwo=[1,2,3]
+print(listOne + listTwo)   #it will be joined together listOne and listTwo
+
+#we can also make use of the extend method
+listOne=['a','b','c']
+listTwo=[1,2,3]
+listOne.extend(listTwo)
+print(listOne)
+
+#we can also make use of the append method but we will need to loop through 
+listOne=['a','b','c']
+listTwo=[1,2,3]
+for x in listTwo:
+    listOne.append(x)
+print(listOne)    #instead of returning a list inside of a a list, listTwo is looped and the items are added individually to list one to form a long list
+
+
+#PYTHON TUPLES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
