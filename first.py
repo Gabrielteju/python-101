@@ -626,6 +626,55 @@ print(tuple3), #tuple1 will continue along with tuple 2
 
 #you cannot use the remove method on tuples, but you can use the del function to delete the entire tuple itself
 
+#tuples are immutable; i.e the values inside cannot be changed but just like the above, we can convert it to a list first, do any changes we want to do and then convert back to a tuple. 
+my_tuple=('our','father','who','art')
+conve=list(my_tuple)
+conve.append('in heaven')
+print(conve)
+final=tuple(conve)
+print(final)  #we are finally converting the result back to a tuple
+
+
+#UNPACKING TUPLES
+#we can unpack tuples by saying, 
+foods=('fufu','rice','beans')
+(first, second, third)=foods
+print(first)
+print(second)
+print(third)   #values on the left hand side will be attached to the values on the right hand side. just like saying we are assigning variables to values
+
+#using asterisks----it used if the number of variables is less than the number of values for example
+fruits=('pawpaw','orange','banana','mango','cashew','grape','guava')
+(red, blue, *green)=fruits
+print(green)    # this will take banana, mango, cashew, grape and guava
+print(red) #this will print out pawpaw
+
+#looping through tuples
+thistuple=('apple','mango','peeper','drama','ginger')
+for x in thistuple:
+    print(x.upper())   #loop through the tuple and print out individual items in the tuple in capital letter
+#joining tuples
+tupl1=('a','b','c')
+tupl2=('d','e','f')
+print(tupl1+tupl2)   #you can concatenate tuples.
+
+#we can also multiply tuples
+#for example
+thistuple=('apple','mango','peeper','drama','ginger')
+print(thistuple*2)
+
+
+
+#PYTHON SETS
+
+
+
+
+
+
+
+
+
 
 
 
