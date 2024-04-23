@@ -590,13 +590,47 @@ print(listOne)    #instead of returning a list inside of a a list, listTwo is lo
 #a tuple is one of the four in built data type in python used to store collections of data, the other three are list, set and dictionary
 #note that TUPLES in python are immutable-i.e they cannot be changed, we cannot use all these reverse, join method on it
 #to create a tuple with one item, we need to add a comma after the first item in the tuple e.g
-tupley=('food',)   #this is a tuple if we check the type, <class tuple>
+tupley=('food',)   #this is a tuple if we check the type, we will get <class tuple>
 tupley=('food')  #this is a string
 
 #the items in a tuple can be of any type, can be boolean, string, etc
 #A LIST IS A COLLECTION THAT IS ORDERED AND CHANGEABLE
 #A TUPLE IS A COLLECTION THAT IS ORDERED AND UNCHANGEABLE
-#A DICTIONARY IS A COLLECTION THAT IS ORDERED AND CHANGEABLE
+#A DICTIONARY IS A COLLECTION THAT IS ORDERED AND CHANGEABLE #meaning only tuple is immutable
+
+
+#accessing tuple items
+thistuple=('rice','beans','yam','egg',5) #we can access the items in this tuple by saying, 
+print(thistuple[1])  #just like normal indexing
+print(thistuple[-1]) # means print the last one
+print(thistuple[2:4])  #just like normal slicing
+
+#we can check if an item is in a tuple by saying
+tupleme=('we are preparing for a long jorney that will shape our life')
+if 'are' in tupleme:
+    print('okay you are welcome')
+else:
+    print('you are not in any way welcome here')
+
+#we can quickly convert a tuple to a list by saying
+top=('fish','radio')
+bottom=list(top)
+print(bottom)  #it will completely become a list with the result ['fish','radio'], and we can do what can be done to a list with it, i.e you can append to it e.t.c. convert the tuple to a list, add your item, and convert it back to a tuple
+
+
+#you are allowed to add a tuple to a tuple in python
+tuple1=('we','are','dancing')
+tuple2=('they','aree','joing')
+tuple3=tuple1+tuple2
+print(tuple3), #tuple1 will continue along with tuple 2
+
+#you cannot use the remove method on tuples, but you can use the del function to delete the entire tuple itself
+
+
+
+
+
+
 
 
 
