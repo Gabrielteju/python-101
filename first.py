@@ -665,7 +665,49 @@ print(thistuple*2)
 
 
 
-#PYTHON SETS
+#PYTHON SETS, just like the tuple, list, set is used to store multiple items in a single variable, it is one of the four built in datat type in python
+
+thisset={'apple', 'orange','mango','pineapple'}, #they are written with curly braces
+#in a set duplicate values are not allowed, i.e we cannot have apple twice in the list
+thisset={'apple', 'orange','mango','pineapple','apple'}
+print(thisset)  #only one apple will come out
+#itemsm in a set can be boolean, strings, integers etc
+#if we want to make a set, we can use the set constructor, by saying set()
+ourset=set(('appple','rice','orange','noodles'))  #note the double braces, not even curly braces
+
+
+#accessing items in a set, we cannot access items in a set by using index number or a key, but we can loop through the set by using the for loop
+
+mySet={'food','bag','money','radio', 'fish'}
+for x in mySet:
+    print(x.upper())
+print('food' in mySet)   #this will give out True
+#ONCE a set is created, you canot change the items but you can add new items to it, by using the add() method
+
+set1={'von','kodak','juice','youngboy'}
+set1.add('quavo')
+print(set1)
+
+#we can add oiterables to a set, i.e we can add tuples, dictionary or lists to a set by using the update() method
+setA={'apple','banana','cherry'}
+setB={'1','2','3'}
+setA.update(setB)
+print(setA)   #what is inside of set B will be added to that of set A
+
+
+#TO remove set items
+#to remove an item in a set, we use the remove method, let us say tha we have a set
+thisset={'apple','banana','oranges','pawpaw'}
+thisset.remove('apple')
+print(thisset)
+
+#if the item you want to remove in a set does not exist, it will throw an error, but instead of using remove in this scenario, we can make use of the discard method,
+thisset.discard('pawpaw')
+print(thisset)
+
+
+
+
 
 
 
