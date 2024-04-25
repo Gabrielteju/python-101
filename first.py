@@ -759,6 +759,28 @@ thisdict={
 }
 print(len(thisdict))   #gives 3 i.e three items in the list
 
+#dictionary is just like an object in javascript, it can take any data type for example;
+thisdict={
+    "brand":'ford',
+    "electric":"false",
+    "colors":["red","blue","green","yellow"] #meaning that you can have a list as the value of a key
+}
+#we can check for the type of the dictionary and we get <class 'dict'>
+#we can access the items in a dictionary by using the key name
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+print(thisdict['brand'])  #it will print out ford
+#we can also use a method called .get, it will bring out the same result as using the curly braces
+#let us say that we have
+x=thisdict.get("model")
+print(x)   #it will print out mustang
+
+
+
+
 
 
 
