@@ -705,6 +705,72 @@ print(thisset)
 thisset.discard('pawpaw')
 print(thisset)
 
+#we can also remove the last item in a set by using the pop method; 
+thisset={'apple','banana','oranges','pawpaw'}
+thisset.pop()
+print(thisset)   #anyone of the items in the listis removed, remember that the items in a set are unordered, so anyone of them can be removed
+#we can also use the  clear method to empty a set,
+thisset={'apple','banana','oranges','pawpaw', 'grape'}
+thisset.clear()
+print(thisset)  #this going to give u an empty set, but the set will still exist, we use the del keyword to delete the set completely
+
+thisset={'apple','banana','oranges','pawpaw', 'grape'}
+del(thisset)
+#print(thisset)   #you will get anerror that says thisset is not defined
+
+#we cann loop or iterate set items
+thissety={'apple','banana','oranges','pawpaw', 'grape'}
+for x in thissety:
+    print(x)   #item in the set will be listed out
+
+
+#we also can make use of the update and union to add sets to sets
+#the update method updates the existing set, while the union method creates a nnew set which contains the items in th efirst set and the items in the second set #for example;
+    
+    set1={'a','b','c','d'}
+    set2={'e','f','g','h'}
+    set1.update(set2)  #set1 will retain it items while adding the items in set 2, do not forget that the items in a set are unordered, meaning that the canbe arranged in any form, no particular form of arrangement
+    print(set1)
+
+
+    #union
+    set1={'a','b','c','d'}
+    set2={'e','f','g','h'}
+    set3=set1.union(set2)  # you need to create a new set to be able to use the union method
+    print(set3)
+
+
+
+#DICTIONARIES IN PYTHON, it is a like a key value pair, but this key value pairs are both strings
+#a dictionary is a collection which is ordered, changeable, and does not allow duplicates
+    
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+print(thisdict["brand"]) #study the syntax very well, this will print out 'ford' as the answer
+
+#a dictionary cannot have the same item with the same key; so we say that in a dictionary, duplicates are not allowed
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+print(len(thisdict))   #gives 3 i.e three items in the list
+
+
+
+
+
+
+
+
+    
+    
+
+
+
 
 
 
