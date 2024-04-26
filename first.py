@@ -808,9 +808,75 @@ else:
 
 
 
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+
+thisdict['year']='1992'  #change the year from 1964 to 1992
+print(thisdict)
 
 
 
+#removing items in a dictionary
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+#we can make use of the pop method, 
+thisdict.pop('brand')
+print(thisdict)
+#if we use the popitem, it removes a random item from the list,
+thisdict.popitem()
+print(thisdict)
+
+#the del keyword removes the item with the specified key name:
+thisdict1={
+    'name':'oludairo',
+    'age':'34',
+    'height':'34meters'
+}
+
+del thisdict1['age']
+print(thisdict1)
+
+
+#we can also use the clear() method to empty the dictionary
+thisdict1={
+    'name':'oludairo',
+    'age':'34',
+    'height':'34meters',
+    'fiancee':'none'
+}
+thisdict1.clear()
+print(thisdict1)   #you will get an empty dictionary
+
+
+#looping through a dictionary
+#you can loop through a dictionary using the for loop, 
+
+thisdict1={
+    'name':'oludairo',
+    'age':'34',
+    'height':'34meters',
+    'fiancee':'none'
+}
+for x in thisdict1:
+    print(x)   #it will return the keys
+
+#to get the values,we say
+for x in thisdict1.values():
+    print(x)
+#we also have
+for x in thisdict1.keys():
+    print(x)
+#we can also have the command, 
+for x,y in thisdict1.items():
+    print(x,y)
+
+    
 
 
 
