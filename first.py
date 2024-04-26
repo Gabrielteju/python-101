@@ -778,6 +778,34 @@ print(thisdict['brand'])  #it will print out ford
 x=thisdict.get("model")
 print(x)   #it will print out mustang
 
+#there is the .key method, this returns the lists of the keys in the dictionary;
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+
+print(thisdict.keys())
+
+#we can add a new item to an object by saying
+thisdict['price']='$3000'
+print(thisdict)
+
+#same way that got the keys, we can also get the values, by saying
+print(thisdict.values()) #just the values in the object will be printed
+
+thisdict={
+"brand":"ford",
+"model":"Mustang",
+"year":"1964"
+}
+print(thisdict.items)
+
+if "model" in thisdict:
+    print('yes, model is among the keys')
+else:
+    print('no, i do not know nothing')
+
 
 
 
