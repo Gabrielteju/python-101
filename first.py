@@ -876,6 +876,42 @@ for x in thisdict1.keys():
 for x,y in thisdict1.items():
     print(x,y)
 
+#copying a dictionary
+originaldict={
+    "name":"teju",
+    "age":'32',
+    'height':'34'
+}
+duplicatedict=originaldict.copy()
+print(duplicatedict)  #what is in the originaldict will be copied to the duplicate one, we canmake a copy by saying
+originaldict={
+    "name":"teju",
+    "age":'32',
+    'height':'34'
+}
+duplicatetwo=dict(originaldict)  #does the same work as the .copy method
+print(duplicatetwo)
+
+#nested dictionaries
+child1={
+    "name":"Emilly",
+    "year":2004,
+    "courses":{
+        "phy":{
+            "phy203":'32',
+            "phy204":'32',
+            "gns304":"34"
+        },
+        "mth":'79',
+        "csp":'82',
+        "ent":"90"
+    },
+    'fame': False
+}
+print(child1)
+
+
+
     
 
 
