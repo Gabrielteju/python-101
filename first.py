@@ -911,6 +911,72 @@ child1={
 print(child1)
 
 
+#this is me trying to write a nested dictionary in python off the top
+
+mynesteddict={
+    "firstly":"omo",
+    "secondly":{
+        "nested":'1',
+        'nested2':'2',
+        "nested3":"3"
+    }
+}
+
+
+#PYTHON IF AND ELSE STATEMENT
+a=3
+b=4
+if a>b:
+    print('i am greater')
+else:
+    print('i am not greater')
+
+c=4
+d=3
+if c!=d:
+    print('okay')
+else:
+    print('i do not know')
+
+#elif-elif in python is a way of sayin, if the previous condition is not true, then try this condition
+a=34
+b=35
+if a>b:
+    print('okay it is truly greater')
+elif(a<b):
+    print('okay, we are cool now')
+else:
+    print("i can't say anything about this")
+
+#SHORTHAND IF:
+e=12
+f=34
+print('e is greater') if e>f else print('e is not greater')  #note that there is no colon in front of if and else, this expression is ternary operator or conditional expression
+
+#AND, it is a logical keyword and it is used to combine conditional statements
+a=200
+b=300
+if a and b > 100:
+    print('truly they are greater than 100')
+a=200
+b=300
+c=350
+if a>b and b>c:
+    print('it is logical')
+else:
+    print('it is complicated')
+#OR, it is also a logical keyword and it is used to combine conditional statements
+a=200
+b=240
+c=333
+if a or b>100:
+    print('for sure, it is greater')
+else:
+    print('I do not know')
+
+
+      
+
 
     
 
