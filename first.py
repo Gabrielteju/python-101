@@ -975,6 +975,34 @@ else:
     print('I do not know')
 
 
+
+
+#we have the pas satement; if the if stement has no content, then we can use the pass stement to avoid getting an error
+a=33
+b=200
+if b>a:
+    pass
+
+i=1
+while i<6:
+    print(i)
+    i+=1
+#we can make use of the continue and breakk keywords in python also, refer to materials for examples;
+    
+#FOR LOOP
+#with the for loop, we can iterate over a sequence(that is a list, or tuple or dict, a set, a string etc)
+
+
+
+#we have the break statement; with the break statement, we can stop the loop at a particular point before it loops through all the items in the sequence
+fruit=['apple','mango','pineapple']
+for x in fruit:
+    if x=='mango':
+        break
+    print(x)   #only apple will be in the output;
+
+   
+
       
 
 
