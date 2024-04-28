@@ -996,12 +996,61 @@ while i<6:
 
 #we have the break statement; with the break statement, we can stop the loop at a particular point before it loops through all the items in the sequence
 fruit=['apple','mango','pineapple']
-for x in fruit:
+for x in fruit:  #do the iteration
     if x=='mango':
         break
-    print(x)   #only apple will be in the output;
+    #print(x)   #only apple will be in the output;
 
-   
+#apart from the break keyword, we also have the continue keyword whose function is to basically stop at a particular declaration and continue with the next operation for example:
+
+
+fruity=['apple','mango','pineapple','pawpaw','vine'] 
+for i in fruity:
+    if i=='banana':   #it means omi banana and move on to the next item on the list
+        continue
+    print(i)
+ 
+ #the range function
+for x in range(6):  #default starting point is 0
+    print(x)
+
+#for x in range(0,6):   #loop through, start from 0 and stop at 5, 6 is not included
+    #print(x)
+
+for x in range(2,6):  #loop through, start from 2 and stop at 5, 6 is not included
+    print(x)
+
+
+#we can add a third parameter to the range which is known as the increment or the step for example;
+for x in range(2,30,4):
+    print(x)   #start from 2, add 4 add 4 again but never include 30
+
+
+for x in range(6):
+    print(x)
+else:
+    print('finally finished') #it means the code(print finally) will not run unless the  range is command is completed
+
+#nested loop-a nested loop is a loop inside of a loop, the nested loop will be executed one time for each iterationof the outer loop
+    #example of a nested loop
+adj=['red','big','tasty','small','tall','bright']
+verb=['come','play','dance','fight','jump']
+for x in adj:
+    for y in verb:
+        print(x,y)  #red come, red play, red dance ............. does same for big, does same for tasty etc
+
+
+#FUNCTIONS in python--a function is a block of code which only runns when it is called
+        
+def myfunction(a,b):
+    print(a+b)  #a and b are the arguments/parameter
+        
+myfunction(2,3)
+    
+
+
+
+
 
       
 
