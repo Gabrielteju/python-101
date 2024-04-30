@@ -1046,6 +1046,46 @@ def myfunction(a,b):
     print(a+b)  #a and b are the arguments/parameter
         
 myfunction(2,3)
+
+#by default in python a function must be called with the correct number of arguments, meaning that if your function expects two arguments, you have to call  the function with the two arguments
+
+
+#this is a way of sending arguments with the key value syntax
+def myFunctiont(child1, child2, child3):
+    print('my first kid is' + ' '+ child3)
+myFunctiont(child1='Damola', child2='Teju', child3='Ope')  #it is just like normal way of passing an arguments into a function just that we are using key value syntax
+
+
+#we have the default parameter, which means, if we call the function without the parameter, the default argument that we passed in will be used
+def myDefaultfunction(country="Azerbaijan"):
+    print('my default value otherwise chnaged is' + " "+ country.capitalize())
+myDefaultfunction('rwanda')  #rwanda will bw used for the position of country
+myDefaultfunction() #the default parameter will be used
+myDefaultfunction(country='Lesotho')  #the default parameter will be replaced with Lesotho
+
+
+
+#here we are passing a list as an argument; we can send any data type into the argument, be it list, or dictionaries etc
+def funcky(food):
+    for x in food:
+        print(x)
+fruits=['apple','orange','banana','cashew']
+funcky(fruits)
+
+
+
+
+#next thing that we have is the return values-to let a function return a value, use the return statement/keyword
+def function1(c):
+    return(c*5)
+result=function1(5)
+print(result)
+
+
+
+#functions cannot be empty, but for any reason we will be needing an empty function, then we can use the pass statement inorder to avoid error
+def ourFunction():
+    pass
     
 
 
