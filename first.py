@@ -1086,6 +1086,41 @@ print(result)
 #functions cannot be empty, but for any reason we will be needing an empty function, then we can use the pass statement inorder to avoid error
 def ourFunction():
     pass
+
+
+
+#PYTHON LAMBDA-a lamda function is a small anonymous function, it can take any number of arguments but can only have one expression
+#syntax-lamda arguments:expression, the expression is executed and the result is returned
+x=lambda a: a +10
+print(x(5))
+
+y=lambda t,r: r+t+15
+print(y(3,4)) #two things are expected as the parameters
+
+
+c=lambda a: a*10   #you can add as many parametrs as you want in the argumets side
+print(c(10)) 
+
+
+#to multiply three 3 digits
+w= lambda x,y,z: x*y*z
+print(w(2,3,4))
+
+
+
+#PYTHON ARRAYS--there is array proper that can be imported from libararies in python but for now we are making use of the list
+#ARRAYS are used to store multiple values in one single variable
+#we can refer to an element in an array by referring to the index number:
+cars=['ford','mustang','g-wagon','porsche']
+#print(cars[1])
+cars[2]='radio'
+print(cars)
+
+
+#
+
+
+
     
 
 
