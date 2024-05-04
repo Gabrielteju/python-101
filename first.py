@@ -337,7 +337,12 @@ b=3
 if(a<b):
     print("i am less")
 else:
-    print('I am not less')          
+    print('I am not less')    
+
+
+#in python, True can be evaluated to 1 while false can be evaluated to be False
+calculated=5 + True      
+print(calculated)   #you will get 6 as the result
 
 
 #Evaluation to be true or not, most evaluation is true except for 0 in number and empty string on strings, this is just like the TRUTHY AND THE FALSY IN JS
@@ -1117,7 +1122,6 @@ cars[2]='radio'
 print(cars)
 
 
-#
 
 
 
