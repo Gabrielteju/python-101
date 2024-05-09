@@ -33,7 +33,7 @@ if 5>3:
     print(y)
 
 # String variables can be declared making use of single or double quotes
-#variable names cannot start with numbers, we cannot make use of hypen also nameing variables, other things that can work for naming variables is the underscore.
+#variable names cannot start with numbers, we cannot make use of hypen also for naming variables, other things that can work for naming variables is the underscore.
 
     
 x,y,z=2,3,4   #python allows you to assign values to multiple variables, number of variables must match the number of values
@@ -73,7 +73,7 @@ def myfunction():
 myfunction()
 
 #we can also have it as
-def addtwoThings(): 
+def addtwoThings():
     print(x + ' ' + 'God') #the x that we assiged to a value above can be used in another place and hence x is a global variable
 addtwoThings()
 
@@ -120,7 +120,7 @@ mySet= {"apple", 'radio', 'mac', 'samsung'}   #this is a set(just like in math w
 print(type(mySet))
 
 
-#DICTIONARY(dict) almost similar to objects in Javascript, it also consits of a key and value pair,
+#DICTIONARY(dict) almost similar to objects in Javascript, it also consits of a key and value pair, just like it is in a normal dictionary, a word : and its meaning
 myDict={"name":"john", "age":'45', 'height':'34meteres'}
 print(type(myDict))
 
@@ -153,10 +153,14 @@ x=1
 y=float(x)
 print(y)
 
+
+
 w=9.908  
 z=int(w)  #it is not going to round up, just going to remove the whole number in front
 print(z)
 #note that we cannot convert from complex to another type
+
+
 
 
 
@@ -181,6 +185,7 @@ print(a)    #the multiline string will make the output to be the same way and fo
 #just like we have indexes in javascript, same goes for python, now let's see the example below
 fruit='banana'
 #print(fruit[2])   #this will show what is on index 2 of fruit which is n, do not forget that indexes starts from 0 to anything, so we have 0,1,2,3 etc
+
 
 
 #IN PYTHON STRINGS ARE ARRAYS, SO WE CAN LOOP THROUGH A STRING SAME WAY WE CAN LOOP THROUGH AN ARRAY, example
@@ -211,10 +216,14 @@ if 'you' in quote:
 else:
     print('it is not contained inside')
 
+
+
 countries='russia,lesotho,paraguay,venezuela,bennin,portugal,scotland'
 print('scotland' in countries)
 print('panama' not in countries)
 #we can use the not in and in for an if and else statement
+
+
 
 
 #SLICING STRING IN PYTHON- we specify the start index and the end index, separated by a colon, to return a part of the string
@@ -222,13 +231,18 @@ stingy='domicican'
 print(stingy[2:3])    #this gives just 'm', 2 is the start index while 3 the 3 index will not be added
 
 
+
 #if we leave out the start index
 hello='hello world'
 print(hello[:5])    # you will get hello as the result, the empty start index means start from the very beginning
 
 
+
+
 hello_two='hello world'
 print(hello_two[2:]) #you will get llo world meaning from that place(index 2) to the very end
+
+
 
 
 #NEGATIVE INDEXING- We use negative indexing to start the slice from the end of the screen
@@ -247,7 +261,7 @@ print(stringy.lower())   #this is a method like it is in JS
 print(stringy.capitalize())   #this is a method like it is in JS
 #we can remove the white space from the end and the beginning of what we were given using the .strip() method
 
-stripping=' there are many meanings to the world radio     '   #the space in front and back will be removed
+stripping=' there are many meanings to the world radio      '#the space in front and back will be removed
 print(stripping.strip())
 
 
@@ -259,6 +273,9 @@ print(caseone.replace('t','v'))  #this replaces the t to v so we have velevision
 food='coming'
 print(food.replace('c', 'f'))
 
+
+
+
 #STRING CONCATENATION
 a='hello'
 b='world'
@@ -267,21 +284,25 @@ print(c)
 
 
 
+
+
 #STRING FORMAT
 age=36
 #txt='my name is John, I am' + age
-#print(age)  # you will get error, you cannot add a string and an integer
+#print(txt)  # you will get error, you cannot add a string and an integer
 
 
 name='alice'
 age=23
 print("hello, {}. You are {} years old.". format(name, age)) #. format here means fill up the empty curly braces with name and age respectively 
 
+
 firstName='Oludairo'
 lastName='Adeteju'
 MiddleName="Gabriel"
 myStatement='{} is my firstname, {} is my lastname and {} is my middlename'
 print(myStatement.format(firstName, lastName, MiddleName))   #study the structuring of this
+
 
 #in string formating, we can make use of index number to be sure that the argument is placed at the correct spot
 name='damola'
@@ -297,6 +318,7 @@ radio='positive fm'
 yam='yellow yam'
 final='the name of the fish is {}, and the name of the radio station that we heard it is {} afterwards we went to the kitchen to cook {}'
 print(final.format(fish,radio,yam))
+
 
 
 #ESCAPE CHARACTERS IN PYTHON-they are used to insert illegal characters in a string, we make us of the backslash '\'  for the escape character, 
@@ -319,6 +341,8 @@ print('we are\\\preparing')
 #to add a single quote
 print('teju\'s phone is an android phone')  #this will make the apostrophe possible without generating an error
 
+
+
 text='we are coming from the jungle and we seriously need to eat some food before continuing in our journey'
 #print(text.upper())
 #print(text.lower())
@@ -337,6 +361,7 @@ else:
     print('I am not less')    
 
 
+
 #in python, True can be evaluated to 1 while false can be evaluated to be False
 calculated=5 + True      
 print(calculated)   #you will get 6 as the result
@@ -352,8 +377,11 @@ print(calculated)   #you will get 6 as the result
     #print(bool(()))
     #print(bool([]))   #they are all false
 
+
+
 #PYTHON OPERATORS
 #we have some python assignment operators e,g, x+=3 means x=x+3, x-=3 means x=x-3, x%=3 means x=x%3 etc
+
 
 #PYTHON COMPARISM OPERATORS==, !=, >,>=, <=, means equal to, not equal to, greater than or equal to, less than or equal to etc
 #PYTHON LOGICAL OPERATOR include and, or,not etc
@@ -361,11 +389,15 @@ print(calculated)   #you will get 6 as the result
 #PYTHON MEMBERSHIP OPERATOR, in and not in
 
 
+
 #PYTHON LIST-lists are used to store multiple items in a variable
 #to determine the number of items of a list we use the len() function
 thislist=['apple', 'pawpaw','cashew','guava']
 
+
+
 print(len(thislist))  #it is read as 1 to 4 not in the index manner, list items can be of any data type, i.e the items in the list can be a combination of boolean, string, int etc
+
 
 #There is a 4 collection data type in python, they are, LIST,TUPLE,SET,DICTIONARY
 listy=['apple', 4, False, 'radio','banana']   #we can also check for membership of items in a list
@@ -374,10 +406,12 @@ if 'apple' in listy:
 else:
     print('apple cannot be found in the provided list')
 
+
 #we can change the item in a list, this is for REPLACING, not INSERTION
 thislist=['apple', 'banana', 'cherry', 'orange']
 thislist[1]='pawpaw'
 print(thislist)
+
 
 #to change a range of item values, say that we have
 thislist=['apple', 'banana', 'cherry', 'orange', 'kiwi','bread','opeyemi']
@@ -385,13 +419,15 @@ thislist[1:3]=['fish','rice','beans']
 #print(thislist) #if you insert more items than you replace, the new items will be inserted where you specified and the remaining items will move accordingly
 
 
+
 #insertion of new items in list-without replacing any other item in the list
 this_list3=['apple', 'banana', 'cherry', 'orange', 'kiwi','bread','opeyemi', 'man']
-this_list3.insert(3,'frying')
+this_list3.insert(3,'frying')  #this means frying should take the fourth index and the other items in from of it should take another index
 #print(this_list3)
 
 
-#we can also append to a list--appending something to a list means you want to add something at the very ending of the list, say that we have-- NOTE THAT APPEND IS A METHOD as in(.append)
+
+#one thing we can also do is to append to a list--appending something to a list means you want to add something at the very ending of the list, say that we have-- NOTE THAT APPEND IS A METHOD as in(.append)
 
 my_list=['usa', 'Nigeria','portugal','lebanon','israel','veitnam','peru']
 my_list.append('chile')
