@@ -445,7 +445,8 @@ list2=['ibikunle','ogolo','ogunjo','adesiji']
 list1.extend(list2)
 print(list1)
 
-#the extend methid does not necessarily have to be a list, we can add a list to a tuple, to a dictionary, etc
+
+#the extend method does not necessarily have to be a list, we can add a list to a tuple, to a dictionary, etc
 listA=['nba','kodak','ross']
 listB=('eminem','drdre','icecube')
 listA.extend(listB)
@@ -458,7 +459,7 @@ listB=['eminem','drdre','icecube']
 #print(listA)   #this will create error, you can only add something to a list, not something to a tuple etc
 
 
-#we can also remove from a lsit item, for example
+#we can also remove from a list item, for example
 listB=['eminem','drdre','icecube','lil mabu','durk']
 listB.remove('durk')
 print(listB)
@@ -466,10 +467,14 @@ listB.remove('eminem')
 listB.remove('lil mabu')
 print(listB)
 
+
 #in Python we have the pop method, the pop method remove the last item from the list, but if we specify the index number, then the item on that index will be removed for example
 listB=['eminem','drdre','icecube','lil mabu','durk']
 listB.pop(1)
 #print(listB)   #3drdre would have been removed from this list
+
+
+
 
 #we can delete an entire list by using the 'del' keyword, note that using a keyword is different from using a method
 listB=['eminem','drdre','icecube','lil mabu','durk']
@@ -477,14 +482,21 @@ del(listB)
 #print(listB), it will tell you that listB is not defined
 
 
+
+
+
 #there is the .clear() method, it clears the items in the list e.g
 listC=['eminem','drdre','icecube','lil mabu','durk']
 listC.clear()
-#print(listC)  #you will get back an empty list
+#print(listC)  #you will get back an empty list, so the clear method retains the list but just that the items in the list are empty, compared to using the del keyword which wipes away the whole thing called list
+
+
 
 #LOOPING
 #FOR
 #we can loop through a list by using a for loop, say that we have:
+
+
 
 forlooping={'eminem','drdre','icecube','lil mabu','durk'}   #whether this is list, dictionary, tuple--they are all iterable
 for x in forlooping:
@@ -494,19 +506,24 @@ teju=range(5) #normally will give us (0,5)
 for i in teju: #looping through this will now give us 0,1,2,3,4............ and will be printed  
     print(i)   
 
-    
+
+
 thislis=['apple', 'banana', 'cherry']
 for x in range(len(thislis)):    #since len gives the length which is 3, range(3) will give us 0,1,2, for will now loop through it to output what is needed
     print(x)
     
 
+
+
 #WHILE loop
-    #you can loop through a list item by using the while loop, i.e we make use of the while loop to repeatedly execute a block of code as long as  gien condition is true
+    #you can loop through a list item by using the while loop, i.e we make use of the while loop to repeatedly execute a block of code as long as  given the condition is true
+
 
 count=1
 while count<=5:   #the loop continues as long as count is less than or equal to 5
     count+=1
     print(count)
+
 
 
 #Let us say that we have a list
@@ -559,6 +576,7 @@ new_list3=[x for x in previous_list]  #print x, after looping through the items 
 print(new_list3)
 
 
+
 newlist_4=[x for x in previous_list if 'a' in x]   # note it means print x after looping through previous_list if a is among the letters in the lists, we can also state a condition like [x for x in previous_list if type(x)!='string'] you are free o explore multiple ways of writing it
 
 
@@ -568,9 +586,11 @@ this_list.sort()
 print(this_list)    #output will be arranged in aphabetical order
 
 
+
 numerical_list=[23,90,12,32,81]   
 numerical_list.sort()
 print(numerical_list) #it will be arranged in ascending order
+
 
 
 numerical_list2=[23,90,12,32,81] 
@@ -579,9 +599,14 @@ numerical_list2.reverse()
 print(numerical_list2)
 
 
+
+
 def myFunction(x):
     return abs(x-50)
 print(myFunction(20))    #it returns 30
+
+
+
 
 #the sort method is case sensitive, meaning that it sorts items in the list that starts with CAPITAL letter before the ones with lower case letters for example;
 mixture1=['banana','pumpkin', 'Orange','Egusi']
@@ -589,19 +614,30 @@ mixture1.sort()
 print(mixture1)   #Egusi comes first in the list then Orange before, banana etc
 
 
+
+
+
 #to perform a case insensitive sort, we use the key,  and say
 mixture1=['banana','pumpkin', 'Orange','Egusi']
 mixture1.sort(key=str.lower)   #note that .lower does not have ()  attached to it
 print(mixture1)
 
+
+
+
 #COPYING A LIST IN PYTHON---by making use of the copy method, say that we have the list
 list_one=['ade','bola','opeyemi','bisola','titi']
 list_two=list_one.copy()
-print(list_two)    #what is inside of list one will bw copied into list two or instead of using the copy method, we can just say
+print(list_two)    #what is inside of list one will be copied into list two or instead of using the copy method, we can just say
+
+
+
 
 list_three=['ade','bola','opeyemi','bisola','titi']
 list_four=list(list_three)
 print(list_four)  # what we have in list three will be copied into list four and will be printed
+
+
 
 
 #PYTHON JOIN
@@ -610,26 +646,34 @@ listOne=['a','b','c']
 listTwo=[1,2,3]
 print(listOne + listTwo)   #it will be joined together listOne and listTwo
 
+
 #we can also make use of the extend method
 listOne=['a','b','c']
 listTwo=[1,2,3]
 listOne.extend(listTwo)
 print(listOne)
 
+
+
 #we can also make use of the append method but we will need to loop through 
 listOne=['a','b','c']
 listTwo=[1,2,3]
 for x in listTwo:
     listOne.append(x)
-print(listOne)    #instead of returning a list inside of a a list, listTwo is looped and the items are added individually to list one to form a long list
+print(listOne)    #instead of returning a list inside of a list, listTwo is looped and the items are added individually to list one to form a long list
+
+
 
 
 #PYTHON TUPLES
-#a tuple is one of the four in built data type in python used to store collections of data, the other three are list, set and dictionary
+#a tuple is one of the four in-built data type in python used to store collections of data, the other three are list, set and dictionary
+
+
 #note that TUPLES in python are immutable-i.e they cannot be changed, we cannot use all these reverse, join method on it
 #to create a tuple with one item, we need to add a comma after the first item in the tuple e.g
 tupley=('food',)   #this is a tuple if we check the type, we will get <class tuple>
 tupley=('food')  #this is a string
+
 
 #the items in a tuple can be of any type, can be boolean, string, etc
 #A LIST IS A COLLECTION THAT IS ORDERED AND CHANGEABLE
@@ -637,11 +681,13 @@ tupley=('food')  #this is a string
 #A DICTIONARY IS A COLLECTION THAT IS ORDERED AND CHANGEABLE #meaning only tuple is immutable
 
 
+
 #accessing tuple items
 thistuple=('rice','beans','yam','egg',5) #we can access the items in this tuple by saying, 
 print(thistuple[1])  #just like normal indexing
 print(thistuple[-1]) # means print the last one
 print(thistuple[2:4])  #just like normal slicing
+
 
 #we can check if an item is in a tuple by saying
 tupleme=('we are preparing for a long jorney that will shape our life')
@@ -656,21 +702,32 @@ bottom=list(top)
 print(bottom)  #it will completely become a list with the result ['fish','radio'], and we can do what can be done to a list with it, i.e you can append to it e.t.c. convert the tuple to a list, add your item, and convert it back to a tuple
 
 
+#on a side note you can concatenate two lists in python, instead of using append and all those stuffs
+listme=['ope','titi','bola','ayo','labake','johnny','kiki']
+listmy=['ope','titi','bola','ayo','labake','johnny','kiki']
+listr=listme+listmy
+print(listr)
+
+
+
 #you are allowed to add a tuple to a tuple in python
 tuple1=('we','are','dancing')
 tuple2=('they','aree','joing')
 tuple3=tuple1+tuple2
 print(tuple3), #tuple1 will continue along with tuple 2
 
-#you cannot use the remove method on tuples, but you can use the del function to delete the entire tuple itself
 
+
+#you cannot use the remove method on tuples, but you can use the del function to delete the entire tuple itself
 #tuples are immutable; i.e the values inside cannot be changed but just like the above, we can convert it to a list first, do any changes we want to do and then convert back to a tuple. 
+
 my_tuple=('our','father','who','art')
 conve=list(my_tuple)
 conve.append('in heaven')
 print(conve)
 final=tuple(conve)
 print(final)  #we are finally converting the result back to a tuple
+
 
 
 #UNPACKING TUPLES
@@ -681,20 +738,26 @@ print(first)
 print(second)
 print(third)   #values on the left hand side will be attached to the values on the right hand side. just like saying we are assigning variables to values
 
+
+
 #using asterisks----it used if the number of variables is less than the number of values for example
 fruits=('pawpaw','orange','banana','mango','cashew','grape','guava')
 (red, blue, *green)=fruits
 print(green)    # this will take banana, mango, cashew, grape and guava
 print(red) #this will print out pawpaw
 
+
 #looping through tuples
 thistuple=('apple','mango','peeper','drama','ginger')
 for x in thistuple:
     print(x.upper())   #loop through the tuple and print out individual items in the tuple in capital letter
+
+
 #joining tuples
 tupl1=('a','b','c')
 tupl2=('d','e','f')
 print(tupl1+tupl2)   #you can concatenate tuples.
+
 
 #we can also multiply tuples
 #for example
@@ -703,45 +766,55 @@ print(thistuple*2)
 
 
 
-#PYTHON SETS, just like the tuple, list, set is used to store multiple items in a single variable, it is one of the four built in datat type in python
+
+
+#PYTHON SETS, just like the tuple, list, set is used to store multiple items in a single variable, it is one of the four built in data type in python
+
 
 thisset={'apple', 'orange','mango','pineapple'}, #they are written with curly braces
-#in a set duplicate values are not allowed, i.e we cannot have apple twice in the list
+#in a set duplicate values are not allowed, i.e we cannot have 'apple' twice in the list
 thisset={'apple', 'orange','mango','pineapple','apple'}
 print(thisset)  #only one apple will come out
-#itemsm in a set can be boolean, strings, integers etc
+#items in a set can be boolean, strings, integers etc
 #if we want to make a set, we can use the set constructor, by saying set()
 ourset=set(('appple','rice','orange','noodles'))  #note the double braces, not even curly braces
 
 
-#accessing items in a set, we cannot access items in a set by using index number or a key, but we can loop through the set by using the for loop
 
+#accessing items in a set, we cannot access items in a set by using index number or a key, but we can loop through the set by using the for loop
 mySet={'food','bag','money','radio', 'fish'}
 for x in mySet:
     print(x.upper())
 print('food' in mySet)   #this will give out True
 #ONCE a set is created, you canot change the items but you can add new items to it, by using the add() method
 
+
 set1={'von','kodak','juice','youngboy'}
 set1.add('quavo')
 print(set1)
 
-#we can add oiterables to a set, i.e we can add tuples, dictionary or lists to a set by using the update() method
+
+#we can add iterables to a set, i.e we can add tuples, dictionary or lists to a set by using the update() method
 setA={'apple','banana','cherry'}
 setB={'1','2','3'}
 setA.update(setB)
 print(setA)   #what is inside of set B will be added to that of set A
 
 
-#TO remove set items
+
+#To remove set items
 #to remove an item in a set, we use the remove method, let us say tha we have a set
 thisset={'apple','banana','oranges','pawpaw'}
 thisset.remove('apple')
 print(thisset)
 
+
+
 #if the item you want to remove in a set does not exist, it will throw an error, but instead of using remove in this scenario, we can make use of the discard method,
 thisset.discard('pawpaw')
 print(thisset)
+
+
 
 #we can also remove the last item in a set by using the pop method; 
 thisset={'apple','banana','oranges','pawpaw'}
@@ -750,32 +823,37 @@ print(thisset)   #anyone of the items in the listis removed, remember that the i
 #we can also use the  clear method to empty a set,
 thisset={'apple','banana','oranges','pawpaw', 'grape'}
 thisset.clear()
-print(thisset)  #this going to give u an empty set, but the set will still exist, we use the del keyword to delete the set completely
+print(thisset)  #this is going to give u an empty set, but the set will still exist, we use the del keyword to delete the set completely just like we have in tuple
+
 
 thisset={'apple','banana','oranges','pawpaw', 'grape'}
 del(thisset)
 #print(thisset)   #you will get anerror that says thisset is not defined
 
-#we cann loop or iterate set items
+
+
+#we can loop or iterate set items
 thissety={'apple','banana','oranges','pawpaw', 'grape'}
 for x in thissety:
     print(x)   #item in the set will be listed out
 
 
+
 #we also can make use of the update and union to add sets to sets
 #the update method updates the existing set, while the union method creates a nnew set which contains the items in th efirst set and the items in the second set #for example;
     
-    set1={'a','b','c','d'}
-    set2={'e','f','g','h'}
-    set1.update(set2)  #set1 will retain it items while adding the items in set 2, do not forget that the items in a set are unordered, meaning that the canbe arranged in any form, no particular form of arrangement
-    print(set1)
+set1={'a','b','c','d'}
+set2={'e','f','g','h'}
+set1.update(set2)  #set1 will retain it items while adding the items in set 2, do not forget that the items in a set are unordered, meaning that the canbe arranged in any form, no particular form of arrangement
+print(set1)
 
 
-    #union
-    set1={'a','b','c','d'}
-    set2={'e','f','g','h'}
-    set3=set1.union(set2)  # you need to create a new set to be able to use the union method
-    print(set3)
+#union
+set1={'a','b','c','d'}
+set2={'e','f','g','h'}
+set3=set1.union(set2)  # you need to create a new set to be able to use the union method, like a union in Mathematics {SET}
+print(set3)
+
 
 
 
@@ -790,12 +868,14 @@ thisdict={
 print(thisdict["brand"]) #study the syntax very well, this will print out 'ford' as the answer
 
 #a dictionary cannot have the same item with the same key; so we say that in a dictionary, duplicates are not allowed
+
 thisdict={
 "brand":"ford",
 "model":"Mustang",
 "year":"1964"
 }
 print(len(thisdict))   #gives 3 i.e three items in the list
+
 
 #dictionary is just like an object in javascript, it can take any data type for example;
 thisdict={
@@ -805,16 +885,19 @@ thisdict={
 }
 #we can check for the type of the dictionary and we get <class 'dict'>
 #we can access the items in a dictionary by using the key name
+
 thisdict={
 "brand":"ford",
 "model":"Mustang",
 "year":"1964"
 }
 print(thisdict['brand'])  #it will print out ford
+
 #we can also use a method called .get, it will bring out the same result as using the curly braces
 #let us say that we have
 x=thisdict.get("model")
 print(x)   #it will print out mustang
+
 
 #there is the .key method, this returns the lists of the keys in the dictionary;
 thisdict={
@@ -822,12 +905,15 @@ thisdict={
 "model":"Mustang",
 "year":"1964"
 }
-
 print(thisdict.keys())
+
+
 
 #we can add a new item to an object by saying
 thisdict['price']='$3000'
 print(thisdict)
+
+
 
 #same way that got the keys, we can also get the values, by saying
 print(thisdict.values()) #just the values in the object will be printed
@@ -838,6 +924,7 @@ thisdict={
 "year":"1964"
 }
 print(thisdict.items)
+
 
 if "model" in thisdict:
     print('yes, model is among the keys')
@@ -866,6 +953,7 @@ thisdict={
 #we can make use of the pop method, 
 thisdict.pop('brand')
 print(thisdict)
+
 #if we use the popitem, it removes a random item from the list,
 thisdict.popitem()
 print(thisdict)
@@ -881,6 +969,7 @@ del thisdict1['age']
 print(thisdict1)
 
 
+
 #we can also use the clear() method to empty the dictionary
 thisdict1={
     'name':'oludairo',
@@ -892,9 +981,10 @@ thisdict1.clear()
 print(thisdict1)   #you will get an empty dictionary
 
 
+
+
 #looping through a dictionary
 #you can loop through a dictionary using the for loop, 
-
 thisdict1={
     'name':'oludairo',
     'age':'34',
@@ -903,6 +993,7 @@ thisdict1={
 }
 for x in thisdict1:
     print(x)   #it will return the keys
+
 
 #to get the values,we say
 for x in thisdict1.values():
@@ -913,6 +1004,8 @@ for x in thisdict1.keys():
 #we can also have the command, 
 for x,y in thisdict1.items():
     print(x,y)
+
+
 
 #copying a dictionary
 originaldict={
@@ -927,6 +1020,7 @@ originaldict={
     "age":'32',
     'height':'34'
 }
+
 duplicatetwo=dict(originaldict)  #does the same work as the .copy method
 print(duplicatetwo)
 
@@ -961,6 +1055,7 @@ mynesteddict={
 }
 
 
+
 #PYTHON IF AND ELSE STATEMENT
 a=3
 b=4
@@ -976,6 +1071,8 @@ if c!=d:
 else:
     print('i do not know')
 
+
+
 #elif-elif in python is a way of sayin, if the previous condition is not true, then try this condition
 a=34
 b=35
@@ -985,6 +1082,7 @@ elif(a<b):
     print('okay, we are cool now')
 else:
     print("i can't say anything about this")
+
 
 #SHORTHAND IF:
 e=12
@@ -1015,7 +1113,7 @@ else:
 
 
 
-#we have the pas satement; if the if stement has no content, then we can use the pass stement to avoid getting an error
+#we have the pass keyword; if the if statement has no content, then we can use the pass statement to avoid getting an error
 a=33
 b=200
 if b>a:
