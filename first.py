@@ -72,7 +72,6 @@ def myfunction():
     print('radio')
 myfunction()
 
-
 #we can also have it as
 def addtwoThings(): 
     print(x + ' ' + 'God') #the x that we assiged to a value above can be used in another place and hence x is a global variable
@@ -324,8 +323,6 @@ text='we are coming from the jungle and we seriously need to eat some food befor
 #print(text.upper())
 #print(text.lower())
 #print(text.upper())
-
-
 
 
 #PYTHON BOOLEAN
